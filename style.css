@@ -1,13 +1,20 @@
+body{
+
+}
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 10em;
+  padding-right: 10em;
   padding-bottom: 0.4em;
   background-color: #171717;
   border-radius: 25px;
   transition: .4s ease-in-out;
+  margin: 5em  ;
+  margin-top: 0.5em;
+  
 }
 
 .form:hover {
@@ -16,13 +23,16 @@
 }
 
 #heading {
+  
   text-align: center;
-  margin: 2em;
+  justify-content: center;
+  margin: 1em auto;
   color: rgb(255, 255, 255);
   font-size: 1.2em;
 }
 
 .field {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,31 +46,28 @@
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
 
-.input-icon {
-  height: 1.3em;
-  width: 1.3em;
-  fill: white;
-}
+
 
 .input-field {
+  
   background: none;
   border: none;
   outline: none;
   width: 100%;
   color: #d3d3d3;
+
 }
 
 .form .btn {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 2.5em;
+  margin-top: 0.5em;
 }
 
 .button1 {
-  padding: 0.5em;
-  padding-left: 1.1em;
-  padding-right: 1.1em;
+  padding: 0.5em; 
+  width: 100px;
   border-radius: 5px;
   margin-right: 0.5em;
   border: none;
@@ -77,8 +84,7 @@
 
 .button2 {
   padding: 0.5em;
-  padding-left: 2.3em;
-  padding-right: 2.3em;
+  width: 100px;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -93,8 +99,9 @@
 }
 
 .button3 {
-  margin-bottom: 3em;
+ 
   padding: 0.5em;
+  width: 150px;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -106,4 +113,207 @@
 .button3:hover {
   background-color: red;
   color: white;
+}
+
+.form .plinks {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  margin: 0.5em ;
+  color: rgb(255, 215, 0);
+  font-size: 1.5em;
+  
+ 
+  margin-top: 0.5em;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.google {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+ 
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.apple {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #000;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: red;
+}
+
+
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #000;
+}
+
+.card2:hover .apple {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #24292e;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+/* From Uiverse.io by lukepadiachy */ 
+.my-loader {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 100px auto;
+}
+
+.rubiks-cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: my-rotateCube 5s infinite linear;
+}
+
+.my-loader .face {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.my-loader .face.front {
+  transform: translateZ(100px);
+}
+.my-loader .face.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.my-loader .face.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.my-loader .face.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.my-loader .face.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.my-loader .face.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.my-loader .cube {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+@keyframes my-rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
 }
